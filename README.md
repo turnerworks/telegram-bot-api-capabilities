@@ -1,6 +1,8 @@
 # Telegram Bot API Capabilities
+## For Neurodivergent Daily Life Support
 
-> Exhaustive guide to everything a Telegram Bot can do, with ASCII buttons for quick navigation
+> Exhaustive guide with **ADHD/Autism-friendly use cases** for each feature
+> Perfect for: Executive function, Planning, Organization, Education, Family coordination, Business
 
 ---
 
@@ -29,28 +31,33 @@
 |     SEND MESSAGE        |
 +-------------------------+
 ```
-- Send text messages
-- Send with HTML/Markdown formatting
-- Send with link previews disabled
-- Send silently (no notification)
-- Send with reply markup
-- Reply to specific messages
-- Forward messages
-- Copy messages
-- Delete messages
-- Edit messages
-- Pin/Unpin messages
+
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Send text messages | `// Morning routine reminders: "Time to take meds" "Brush teeth" "Pack lunch"` |
+| HTML/Markdown formatting | `// Visual hierarchy for task lists - bold for URGENT, italics for optional` |
+| Disable link previews | `// Reduce visual clutter/overwhelm when sharing resources` |
+| Send silently | `// Late-night reminders that won't wake family but will be there in morning` |
+| Reply markup | `// Quick response buttons: "Done" "Snooze 10min" "Skip today"` |
+| Reply to specific messages | `// Context anchoring - reply to the task you completed for satisfaction tracking` |
+| Forward messages | `// Share therapy homework with accountability partner` |
+| Copy messages | `// Duplicate successful routine templates to new days` |
+| Delete messages | `// Remove completed tasks to reduce visual noise` |
+| Edit messages | `// Update task status without creating new message clutter` |
+| Pin messages | `// Keep daily priorities VISIBLE at top - reduces "out of sight, out of mind"` |
 
 ```
 +-------------------------+
 |    MESSAGE EFFECTS      |
 +-------------------------+
 ```
-- Message reactions
-- Typing indicators
-- Read receipts (in some contexts)
-- Schedule messages
-- Protect content from forwarding
+
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Message reactions | `// Quick dopamine hit - react with checkmark when task done` |
+| Typing indicators | `// Know when accountability partner is responding (reduces anxiety)` |
+| Schedule messages | `// SET UP REMINDERS DURING HYPERFOCUS - deploy when needed later` |
+| Protect content | `// Keep private journal entries from being forwarded accidentally` |
 
 ---
 
@@ -61,30 +68,33 @@
 |   INLINE KEYBOARDS      |
 +-------------------------+
 ```
-- URL buttons (open links)
-- Callback buttons (trigger bot actions)
-- Switch inline query buttons
-- Pay buttons
-- Login buttons (Telegram Login Widget)
-- Web App buttons (Mini Apps)
-- Copy text buttons
+
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| URL buttons | `// One-tap access to frequently forgotten links (portal logins, calendars)` |
+| Callback buttons | `// "I ate breakfast" -> logs meal, sends encouragement, updates streak` |
+| Switch inline query | `// Quick-share your location with family without typing` |
+| Pay buttons | `// Reduce friction for bills - one tap instead of remembering passwords` |
+| Login buttons | `// Skip password recall - major executive function saver` |
+| Web App buttons | `// Launch habit tracker, mood logger, or sensory break timer` |
+| Copy text buttons | `// One-tap copy your address, phone, or standard responses` |
 
 ```
 +-------------------------+
 |   REPLY KEYBOARDS       |
 +-------------------------+
 ```
-- Custom keyboard buttons
-- Request contact button
-- Request location button
-- Request poll button
-- Request user button
-- Request chat button
-- Web App button
-- Resize keyboard option
-- One-time keyboard option
-- Selective keyboard (specific users)
-- Remove keyboard
+
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Custom keyboard buttons | `// Predefined responses: "Good day" "Meh day" "Hard day" "Need support"` |
+| Request contact | `// Emergency contact sharing without remembering numbers` |
+| Request location | `// "I'm lost" -> instantly shares GPS with trusted person` |
+| Request poll | `// Family dinner vote: "Pizza" "Tacos" "Leftovers" - reduces decision fatigue` |
+| Request user | `// Quickly identify who in group should handle a task` |
+| Request chat | `// Select which project channel to post update to` |
+| One-time keyboard | `// Disappears after choice - reduces visual clutter` |
+| Selective keyboard | `// Different options for parent vs child in family group` |
 
 ---
 
@@ -95,311 +105,173 @@
 |      SEND MEDIA         |
 +-------------------------+
 ```
-- Photos (single & albums)
-- Videos
-- Audio files
-- Voice messages
-- Video notes (round videos)
-- Documents/Files
-- Animations (GIFs)
-- Stickers
-- Paid media
+
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Photos | `// Visual checklists, "this is what clean room looks like" reference pics` |
+| Videos | `// Record yourself explaining a process during hyperfocus for later` |
+| Audio files | `// Calming playlists sent at scheduled anxiety-prone times` |
+| Voice messages | `// Brain dump thoughts when typing feels impossible` |
+| Video notes | `// Quick face check-in with therapist/coach between sessions` |
+| Documents | `// Store important PDFs (insurance cards, IEP docs) for instant access` |
+| Animations/GIFs | `// Celebration GIFs for completed tasks - dopamine reward system` |
+| Stickers | `// Non-verbal communication when words are hard` |
 
 ```
 +-------------------------+
 |    MEDIA GROUPS         |
 +-------------------------+
 ```
-- Send media groups (up to 10 items)
-- Mixed photo/video albums
-- Document groups
 
-```
-+-------------------------+
-|   MEDIA FEATURES        |
-+-------------------------+
-```
-- Thumbnails
-- Captions with formatting
-- Spoiler media
-- File size limits (50MB download, 20MB upload via API)
-- Stream large files via URL
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Media albums | `// Document project progress - before/during/after in one message` |
+| Mixed albums | `// Combine photo proof + video explanation of completed task` |
 
 ---
 
-## 4. INLINE MODE
+## 4. SCHEDULED REMINDERS (via Webhooks)
 
 ```
 +-------------------------+
-|    INLINE QUERIES       |
+|   TIMED NOTIFICATIONS   |
 +-------------------------+
 ```
-- Answer inline queries
-- Article results
-- Photo results
-- GIF results
-- Video results
-- Audio results
-- Voice results
-- Document results
-- Location results
-- Venue results
-- Contact results
-- Game results
-- Sticker results
-- Cached results (file_id reuse)
 
-```
-+-------------------------+
-|   INLINE FEATURES       |
-+-------------------------+
-```
-- Personal results (user-specific)
-- Query result caching
-- Switch to PM button
-- Inline feedback (chosen_inline_result)
-- Location-based results
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Webhook triggers | `// External calendar -> bot reminds 30min, 15min, 5min before events` |
+| Time-based sends | `// Medication reminders at exact times with escalating urgency` |
+| Recurring patterns | `// "It's Wednesday - garbage day!" every week automatically` |
+| Location triggers | `// "You're near the grocery store - here's your list"` |
 
 ---
 
-## 5. PAYMENTS
+## 5. POLLS & DECISIONS
 
 ```
 +-------------------------+
-|    PAYMENT FLOW         |
+|    REDUCE DECISION      |
+|       FATIGUE           |
 +-------------------------+
 ```
-- Send invoices
-- Pre-checkout queries
-- Successful payment handling
-- Refunds
-- Shipping queries
-- Flexible prices
-- Provider tokens (Stripe, etc.)
 
-```
-+-------------------------+
-|   PAYMENT FEATURES      |
-+-------------------------+
-```
-- Multiple currencies
-- Tips/Gratuities
-- Subscription payments
-- Digital goods
-- Physical goods with shipping
-- Telegram Stars payments
-- Payment receipts
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Regular polls | `// "What should I do first?" - let the bot/family decide` |
+| Quiz polls | `// Learning reinforcement - medication names, emergency procedures` |
+| Anonymous polls | `// Family check-in: "How's everyone's energy today?" honestly` |
+| Multiple answers | `// "Which self-care did you do today?" - celebrate any wins` |
+| Close poll | `// Decision made - stop second-guessing, move forward` |
 
 ---
 
-## 6. GROUP/CHANNEL MANAGEMENT
+## 6. GROUP/FAMILY COORDINATION
 
 ```
 +-------------------------+
-|   MEMBER MANAGEMENT     |
+|   FAMILY BOT FEATURES   |
 +-------------------------+
 ```
-- Get chat member info
-- Get chat member count
-- Get chat administrators
-- Kick/Ban members
-- Unban members
-- Restrict members
-- Promote/Demote admins
-- Set custom admin titles
-- Approve/Decline join requests
+
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Get member info | `// Track who's seen important family announcements` |
+| Member count | `// Confirm all family members are in the safety check group` |
+| Restrict members | `// Limit kid's bot interactions to age-appropriate features` |
+| Custom admin titles | `// "Meal Planner" "Homework Helper" "Errand Runner" - clear roles` |
+| Join requests | `// Approve new babysitter/tutor to family coordination group` |
 
 ```
 +-------------------------+
-|   CHAT SETTINGS         |
+|   FORUM TOPICS          |
 +-------------------------+
 ```
-- Set chat title
-- Set chat description
-- Set chat photo
-- Delete chat photo
-- Set chat permissions
-- Set slow mode delay
-- Export chat invite links
-- Create invite links
-- Revoke invite links
-- Edit invite links
 
-```
-+-------------------------+
-|   CHAT FEATURES         |
-+-------------------------+
-```
-- Create forum topics
-- Edit forum topics
-- Close/Reopen topics
-- Delete forum topics
-- Pin messages in topics
-- Hide/Show general topic
-- Set chat menu button
-- Get chat menu button
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Create topics | `// Separate threads: URGENT, Groceries, School, Medical, Fun` |
+| Pin in topics | `// Keep important info visible in each category` |
+| Close topics | `// Archive completed projects to reduce noise` |
 
 ---
 
-## 7. STICKERS
+## 7. EXECUTIVE FUNCTION HELPERS
 
 ```
 +-------------------------+
-|   STICKER ACTIONS       |
+|    TASK MANAGEMENT      |
 +-------------------------+
 ```
-- Send stickers
-- Get sticker set
-- Upload sticker file
-- Create new sticker set
-- Add sticker to set
-- Set sticker position in set
-- Delete sticker from set
-- Set sticker set thumbnail
-- Set custom emoji sticker set thumbnail
-- Delete sticker set
 
-```
-+-------------------------+
-|   STICKER TYPES         |
-+-------------------------+
-```
-- Static stickers (WebP)
-- Animated stickers (TGS)
-- Video stickers (WebM)
-- Custom emoji stickers
-- Mask stickers
-- Regular stickers
-
-```
-+-------------------------+
-|   STICKER FEATURES      |
-+-------------------------+
-```
-- Sticker keywords/emojis
-- Sticker set name customization
-- Premium stickers
-- Custom emoji for premium users
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Bot commands | `// /today - shows today's tasks, /done [task] - marks complete` |
+| Inline queries | `// Type @mybot in any chat to quickly log something` |
+| Callback data | `// Track button presses: how many times snoozed? Adjust approach` |
+| User state | `// Remember where user left off in multi-step task breakdown` |
 
 ---
 
-## 8. GAMES
+## 8. SENSORY & EMOTIONAL REGULATION
 
 ```
 +-------------------------+
-|     GAME ACTIONS        |
+|   STICKER SYSTEM        |
 +-------------------------+
 ```
-- Send game
-- Set game score
-- Get game high scores
-- Inline game messages
+
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Custom sticker sets | `// Personal emotion cards: "Overstimulated" "Need space" "Happy stim"` |
+| Animated stickers | `// Soothing repetitive animations for calming` |
+| Emoji stickers | `// Non-verbal communication when words are too hard` |
 
 ```
 +-------------------------+
-|    GAME FEATURES        |
+|        DICE/GAMES       |
 +-------------------------+
 ```
-- HTML5 games
-- Game URLs
-- High score tables
-- Force score updates
-- Disable edit message
 
----
-
-## 9. WEBHOOKS & UPDATES
-
-```
-+-------------------------+
-|     WEBHOOK SETUP       |
-+-------------------------+
-```
-- Set webhook URL
-- Delete webhook
-- Get webhook info
-- Custom certificates (self-signed)
-- IP whitelist
-- Allowed updates filter
-- Secret token validation
-
-```
-+-------------------------+
-|    LONG POLLING         |
-+-------------------------+
-```
-- getUpdates method
-- Offset parameter
-- Timeout configuration
-- Update limits
-
-```
-+-------------------------+
-|    UPDATE TYPES         |
-+-------------------------+
-```
-- message
-- edited_message
-- channel_post
-- edited_channel_post
-- business_connection
-- business_message
-- edited_business_message
-- deleted_business_messages
-- message_reaction
-- message_reaction_count
-- inline_query
-- chosen_inline_result
-- callback_query
-- shipping_query
-- pre_checkout_query
-- purchased_paid_media
-- poll
-- poll_answer
-- my_chat_member
-- chat_member
-- chat_join_request
-- chat_boost
-- removed_chat_boost
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Dice roll | `// Can't decide? Roll dice. Removes decision paralysis.` |
+| Slot machine | `// Random reward for completing tasks - gamification dopamine` |
+| Games | `// Structured break activities with clear end points` |
 
 ---
 
-## 10. BOT PROFILE & SETTINGS
+## 9. LOCATION & SAFETY
 
 ```
 +-------------------------+
-|    BOT INFORMATION      |
+|    SAFETY FEATURES      |
 +-------------------------+
 ```
-- Get bot info (getMe)
-- Set bot name
-- Get bot name
-- Set bot description
-- Get bot description
-- Set bot short description
-- Get bot short description
+
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Send location | `// "I'm overwhelmed at the store" -> family can find you` |
+| Live location | `// Commute tracking - family knows you're safe without texts` |
+| Venue sharing | `// Share exactly which entrance/building for meetups (reduces anxiety)` |
+| Contact sharing | `// Emergency: one tap sends all your info to responder` |
+
+---
+
+## 10. BUSINESS/WORK SUPPORT
 
 ```
 +-------------------------+
-|    BOT COMMANDS         |
+|  WORK ACCOMMODATIONS    |
 +-------------------------+
 ```
-- Set my commands
-- Delete my commands
-- Get my commands
-- Command scopes (all users, admins, specific chats)
-- Language-specific commands
 
-```
-+-------------------------+
-|   BOT MENU BUTTON       |
-+-------------------------+
-```
-- Set chat menu button
-- Get chat menu button
-- Web App menu button
-- Commands menu button
-- Default menu button
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Business messages | `// Auto-replies when in focus mode: "I'll respond at 3pm"` |
+| Away messages | `// Automatic "I'm overwhelmed, response delayed" during hard days` |
+| Greeting messages | `// Template responses for common client questions` |
+| Opening hours | `// Clear boundaries - bot only responds during work hours` |
 
 ---
 
@@ -407,193 +279,51 @@
 
 ```
 +-------------------------+
-|    WEB APP FEATURES     |
+|    CUSTOM TOOLS         |
 +-------------------------+
 ```
-- Open Web App from keyboard button
-- Open Web App from inline button
-- Open Web App from menu button
-- Direct link Mini Apps
-- Inline mode Mini Apps
-- Attachment menu Mini Apps
 
-```
-+-------------------------+
-|   WEB APP DATA          |
-+-------------------------+
-```
-- Answer web app query
-- Web app data validation
-- InitData parameter
-- User authentication
-- Theme parameters
-- Viewport settings
-- Main button control
-- Back button control
-- Haptic feedback
-- Cloud storage
-- Biometric auth
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Habit trackers | `// Visual streak counters - don't break the chain motivation` |
+| Mood loggers | `// Quick tap mood tracking throughout day` |
+| Timers | `// Pomodoro, transition warnings, "5 minutes until leaving"` |
+| Sensory menus | `// "I need: quiet / pressure / movement / snack" quick selector` |
+| Routine builders | `// Visual step-by-step guides with checkboxes` |
 
 ---
 
-## 12. BUSINESS FEATURES
+## 12. EDUCATION & LEARNING
 
 ```
 +-------------------------+
-|   BUSINESS ACCOUNTS     |
+|   LEARNING SUPPORT      |
 +-------------------------+
 ```
-- Business connection handling
-- Business messages
-- Manage business messages
-- Business intro
-- Business location
-- Business opening hours
-- Greeting messages
-- Away messages
+
+| Feature | ADHD/Autism Use Case |
+|---------|---------------------|
+| Spaced repetition | `// Bot quizzes you on study material at optimal intervals` |
+| Progress tracking | `// Visual progress bars toward learning goals` |
+| Homework reminders | `// "Assignment due in 24 hours" -> "12 hours" -> "3 hours"` |
+| Study buddy matching | `// Connect with accountability partner for body doubling` |
 
 ---
 
-## 13. SPECIAL CONTENT
-
-```
-+-------------------------+
-|      LOCATIONS          |
-+-------------------------+
-```
-- Send location
-- Send live location
-- Edit live location
-- Stop live location
-- Send venue
-
-```
-+-------------------------+
-|      CONTACTS           |
-+-------------------------+
-```
-- Send contact
-- vCard support
-
-```
-+-------------------------+
-|        POLLS            |
-+-------------------------+
-```
-- Send poll
-- Regular polls
-- Quiz polls
-- Anonymous polls
-- Multiple answers
-- Close poll
-- Stop poll
-
-```
-+-------------------------+
-|        DICE             |
-+-------------------------+
-```
-- Send dice
-- Dice emoji types: dice, darts, basketball, football, bowling, slot machine
-
----
-
-## 14. CHAT ACTIONS
-
-```
-+-------------------------+
-|   TYPING INDICATORS     |
-+-------------------------+
-```
-- typing
-- upload_photo
-- record_video
-- upload_video
-- record_voice
-- upload_voice
-- upload_document
-- choose_sticker
-- find_location
-- record_video_note
-- upload_video_note
-
----
-
-## 15. FILE HANDLING
-
-```
-+-------------------------+
-|    FILE OPERATIONS      |
-+-------------------------+
-```
-- Get file info
-- Download files
-- file_id reuse
-- file_unique_id
-- Local Bot API server (unlimited file sizes)
-
----
-
-## 16. PASSPORT
-
-```
-+-------------------------+
-|  TELEGRAM PASSPORT      |
-+-------------------------+
-```
-- Request user data
-- Personal details
-- Identity documents
-- Address documents
-- Phone verification
-- Email verification
-- Data decryption
-- Error handling
-
----
-
-## API METHODS QUICK REFERENCE
-
-```
-+---------------------------+---------------------------+---------------------------+
-|       MESSAGING           |        MEDIA              |       MANAGEMENT          |
-+---------------------------+---------------------------+---------------------------+
-| sendMessage               | sendPhoto                 | getChat                   |
-| forwardMessage            | sendAudio                 | getChatMember             |
-| copyMessage               | sendDocument              | getChatMemberCount        |
-| sendReply                 | sendVideo                 | getChatAdministrators     |
-| editMessageText           | sendAnimation             | banChatMember             |
-| editMessageCaption        | sendVoice                 | unbanChatMember           |
-| editMessageMedia          | sendVideoNote             | restrictChatMember        |
-| editMessageReplyMarkup    | sendMediaGroup            | promoteChatMember         |
-| deleteMessage             | sendLocation              | setChatAdminCustomTitle   |
-| deleteMessages            | sendVenue                 | setChatPermissions        |
-+---------------------------+---------------------------+---------------------------+
-
-+---------------------------+---------------------------+---------------------------+
-|        INLINE             |       PAYMENTS            |       STICKERS            |
-+---------------------------+---------------------------+---------------------------+
-| answerInlineQuery         | sendInvoice               | sendSticker               |
-| answerCallbackQuery       | answerShippingQuery       | getStickerSet             |
-| answerWebAppQuery         | answerPreCheckoutQuery    | uploadStickerFile         |
-|                           | createInvoiceLink         | createNewStickerSet       |
-|                           | refundStarPayment         | addStickerToSet           |
-|                           |                           | deleteStickerFromSet      |
-+---------------------------+---------------------------+---------------------------+
-```
-
----
-
-## RATE LIMITS
+## QUICK IMPLEMENTATION IDEAS
 
 ```
 +----------------------------------+
-|         RATE LIMITS              |
+|     STARTER BOT CONCEPTS         |
 +----------------------------------+
-| 30 msgs/sec to same chat         |
-| 1 msg/sec to same user in groups |
-| 20 msgs/min to same group        |
-| Bulk: 30 msgs/sec overall        |
+| Morning Routine Bot              |
+| Medication Reminder Bot          |
+| Family Coordination Bot          |
+| Mood & Energy Tracker            |
+| Decision Helper Bot              |
+| Sensory Break Timer              |
+| Hyperfocus Capture Bot           |
+| Accountability Partner Bot       |
 +----------------------------------+
 ```
 
@@ -601,10 +331,10 @@
 
 ## RESOURCES
 
-- [Official Bot API Documentation](https://core.telegram.org/bots/api)
-- [Bot API Changelog](https://core.telegram.org/bots/api-changelog)
-- [BotFather](https://t.me/BotFather) - Create and manage bots
+- [Official Bot API](https://core.telegram.org/bots/api)
+- [BotFather](https://t.me/BotFather) - Create your support bot
 
 ---
 
-*Created by TurnerWorks - Your quick reference for Telegram Bot development*
+*Created by TurnerWorks - Telegram bots for neurodivergent thriving*
+*Because our brains work differently, our tools should too.*
